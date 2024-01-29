@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resp.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- NavBar -->
+        <div class="nav-box">
+            <h2 class="title">Weather App</h2>
+        </div>
+
+        <!-- Btn Box -->
+        <div class="btn-box">
+            <div class="your-weather"><i class="ri-map-pin-user-fill ur"></i> Weather</div>
+            <div class="search-weather"><i class="ri-menu-search-line sr"></i> Weather</div>
+        </div>
+
+        <!-- Cotainer -->
+        <div class="container">
+
+            <!-- User Weather -->
+            <div class="user-weather">
+                <!-- container-1 -->
+                <div class="cont1">
+                    <div class="box-1">
+                        <!-- Temp information -->
+                        <div class="display-box-1">
+                            <div class="temp user-no-select"> <span class="C"><i class="ri-celsius-line"></i></span>
+                                <!-- User value -->
+                            </div>
+                            <div class="temp-box">
+                                <img class="sun-cloud" width="100" height="100"
+                                    src="https://img.icons8.com/clouds/100/sun.png" alt="sun" />
+                                <p class="temp-des">Temp</p>
+                            </div>
+                        </div>
+
+                        <!-- Max-Min Temp info -->
+                        <div class="display-box-2">
+                            <!-- Max-Box -->
+                            <div class="max-box">
+                                <p class="max-temp-title"> Max Temp</p>
+                                <hr color="black" style="margin-top: 4px;">
+                                <p class="max-temp user-no-select"> <span class="cel"><i
+                                            class="ri-celsius-line"></i></span></p> <!-- User value -->
+                            </div>
+
+                            <!-- Min-BOx -->
+                            <div class="min-box">
+                                <p class="max-temp-title"> Min Temp</p>
+                                <hr color="black" style="margin-top: 4px;">
+                                <p class="min-temp user-no-select"> <span class="cel"><i
+                                            class="ri-celsius-line"></i></span></p> <!-- User value -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOX 2 -->
+
+                    <div class="box-2">
+                        <h2 class="cityName pd-l user-no-select"> </h2> <!-- User value -->
+                        <p class="date pd-l user-no-select"> </p> <!-- User value -->
+                        <p class="time pd-l user-no-select"> </p> <!-- User value -->
+
+                        <hr color="gray" style="margin-top:10px; margin-bottom: 10px;">
+
+                        <h2 class="pd-l user-no-select">Discription</h2>
+                        <p class="pd-l user-no-select desc"> </p> <!-- User value -->
+
+                        <hr color="gray" style="margin-top:10px; margin-bottom: 10px;">
+
+                        <div class="img-t">
+                            <img class="sun-cloud" width="100" height="100"
+                                src="https://img.icons8.com/clouds/100/sun.png" alt="sun" />
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Container-2  -->
+                <div class="cont2">
+
+                    <!-- Wind Speed -->
+                    <div class="cont2-box-1" style="background-color: white;">
+                        <p class="max-temp-title user-no-select"> Wind Speed</p>
+                        <hr color="black" style="margin-top: 4px;">
+                        <p class="Wind-speed user-no-select"> <span class="cel"> km</span></p> <!-- User value -->
+                    </div>
+
+                    <!-- Humidity -->
+                    <div class="cont2-box-1" style="background-color: white;">
+                        <p class="max-temp-title user-no-select"> Humidity</p>
+                        <hr color="black " style="margin-top: 4px;">
+                        <p class="Humidity user-no-select"> <span class="cel">%</span></p> <!-- User value -->
+                    </div>
+
+                    <!-- Clouds -->
+                    <div class="cont2-box-1" style="background-color: white;">
+                        <p class="max-temp-title user-no-select"> Clouds</p>
+                        <hr color="black " style="margin-top: 4px;">
+                        <p class="clouds user-no-select"> <span class="cel">%</span></p> <!-- User value -->
+                    </div>
+
+                    <!-- RAIN -->
+                    <div class="cont2-box-1" style="background-color: white;">
+                        <p class="max-temp-title user-no-select"> Country</p>
+                        <hr color="black " style="margin-top: 4px;">
+                        <p class="rain user-no-select"> </p> <!-- User value -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Access Location -->
+            <div class="access-location">
+                <div class="cont-location-1">
+                    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/location.png"
+                        alt="location" />
+
+                    <h2 class="al-tltle">Grant Location Access</h2>
+                    <p class="al-p">Allow Access To Get Weather Information</p>
+                    <!-- BTN -->
+                    <div class="grant-access-btn">GRANT ACCESS</div>
+                </div>
+            </div>
+
+
+            <!-- Search -->
+            <div class="search-box">
+                <input type="text" class="input" id="inputvalue" placeholder="Search For City....">
+                <button class="s-btn"><i class="ri-search-2-line"></i></button>
+            </div>
+
+
+            <!-- Loading  -->
+            <div class="loading-box">
+                <img src="./IMG/loading.gif" alt="">
+            </div>
+
+
+            <!-- Error  -->
+            <div class="err-box">
+                <img src="./IMG/err.png" width="200px" height="200px">
+                <p class="custom-err"></p>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

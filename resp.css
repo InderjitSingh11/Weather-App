@@ -1,0 +1,13 @@
+@media (max-width:530px) {
+    .container{
+        width: 100%;
+    }
+    .cont1{
+        flex-direction: column;
+    } 
+    .cont2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
